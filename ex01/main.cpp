@@ -5,11 +5,11 @@
 
 void	printMenu(void)
 {
-	std::cout << "Please select an option:" << std::endl;
-    std::cout << "1️⃣ ADD 📝" << std::endl;
-    std::cout << "2️⃣ SEARCH 🔍" << std::endl;
-    std::cout << "3️⃣ EXIT 🚪" << std::endl;
-    std::cout << "Enter your choice 💻: ";
+	std::cout << "Please select from the menu:" << std::endl;
+    std::cout << "[---- ADD ----]" << std::endl;
+    std::cout << "[---- SEARCH -----]" << std::endl;
+    std::cout << "[---- EXIT -----]" << std::endl;
+    std::cout << "Enter your choice : ";
 }
 
 int main() 
