@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-void	printMenu(void)
+void	welcomeMenu(void)
 {
 	std::cout << "Please select from the menu:" << std::endl;
     std::cout << "[---- ADD ----]" << std::endl;
@@ -21,7 +21,7 @@ int main()
     {
         if (std::cin.eof())
             break;
-        printMenu();
+        welcomeMenu();
         std::getline(std::cin, command);
         if (command == "ADD")
             phoneBook.addContact();
@@ -30,7 +30,7 @@ int main()
         else if (command == "EXIT")
             break;
         else
-            std::cout << "Invalid command" << std::endl;
+            std::cout << "wrong command please enter (ADD or SEARCH or EXIT)" << std::endl;
         
     }
 }
