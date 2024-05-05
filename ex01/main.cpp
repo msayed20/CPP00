@@ -17,7 +17,7 @@ int main()
     PhoneBook phoneBook;
     std::string command;
 
-    while (true) 
+    while (1) 
     {
         if (std::cin.eof())
             break;
