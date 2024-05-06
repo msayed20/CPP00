@@ -6,19 +6,19 @@
 class Contact 
 {
 private:
-    std::string firstName;
-    std::string lastName;
-    std::string nickname;
-    std::string phoneNumber;
-    std::string darkestSecret;
-    bool isValid;
+    std::string _firstName;
+    std::string _lastName;
+    std::string _nickname;
+    std::string _phoneNumber;
+    std::string _darkestSecret;
+    bool _isValid;
 
 public:
-    Contact() : isValid(false) {}
+    Contact() : _isValid(false) {}
     bool setDetails();
     void displayContactSummary(int index) const;
     void displayFullDetails() const;
-    bool isValidContact() const { return isValid; }
+    bool isValidContact() const { return _isValid; }
 
 };
 

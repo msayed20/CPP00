@@ -33,28 +33,28 @@ bool Contact::setDetails()
     if (secretTemp.empty())
         return(std::cout << "Darkest secret cannot be empty. Please try again.\n", false);
 
-    firstName = firstTemp;
-    lastName = lastTemp;
-    nickname = nickTemp;
-    phoneNumber = phoneTemp;
-    darkestSecret = secretTemp;
-    isValid = true;
+    _firstName = firstTemp;
+    _lastName = lastTemp;
+    _nickname = nickTemp;
+    _phoneNumber = phoneTemp;
+    _darkestSecret = secretTemp;
+    _isValid = true;
     return true;
 }
 
 void Contact::displayContactSummary(int index) const 
 {
     std::cout << std::setw(10) << index << "|";
-    std::cout << std::setw(10) << (firstName.length() > 10 ? firstName.substr(0, 9) + "." : firstName) << "|";
-    std::cout << std::setw(10) << (lastName.length() > 10 ? lastName.substr(0, 9) + "." : lastName) << "|";
-    std::cout << std::setw(10) << (nickname.length() > 10 ? nickname.substr(0, 9) + "." : nickname) << std::endl;
+    std::cout << std::setw(10) << (_firstName.length() > 10 ? _firstName.substr(0, 9) + "." : _firstName) << "|";
+    std::cout << std::setw(10) << (_lastName.length() > 10 ? _lastName.substr(0, 9) + "." : _lastName) << "|";
+    std::cout << std::setw(10) << (_nickname.length() > 10 ? _nickname.substr(0, 9) + "." : _nickname) << std::endl;
 }
 
 void Contact::displayFullDetails() const 
 {
-    std::cout << "First Name: " << firstName << std::endl;
-    std::cout << "Last Name: " << lastName << std::endl;
-    std::cout << "Nickname: " << nickname << std::endl;
-    std::cout << "Phone Number: " << phoneNumber << std::endl;
-    std::cout << "Darkest Secret: " << darkestSecret << std::endl;
+    std::cout << "First Name: " << _firstName << std::endl;
+    std::cout << "Last Name: " << _lastName << std::endl;
+    std::cout << "Nickname: " << _nickname << std::endl;
+    std::cout << "Phone Number: " << _phoneNumber << std::endl;
+    std::cout << "Darkest Secret: " << _darkestSecret << std::endl;
 }
